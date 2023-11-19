@@ -115,3 +115,39 @@ bool ativo = true;
 char caractere = 'A';
 char unicode = '\u0041';
 ```
+
+### Tipos de Referência: String, Object e Dynamic
+
+| Alias     | Definição                                                                                          | Tipo .NET     |
+| --------- | -------------------------------------------------------------------------------------------------- | ------------- |
+| `string`  | Representa uma sequência de zero ou mais caracteres Unicode (são imutáveis)                        | System.String |
+| `object`  | É o tipo base para todos os outros tipos                                                           | System.Object |
+| `dynamic` | São resolvidos em tempo de execução <br>Se comportam como o tipo `object` na maioria das situações | System.Object |
+
+- São tipos de referência.
+
+- O valor padrão é `null`.
+
+```csharp
+// string: representa uma sequência de caracteres Unicode imutável
+string frase = "Curso C# Essencial";
+frase = "Criando uma nova frase"; // como strings são imutáveis, essa atribuição cria uma nova instância de string e descarta a anterior
+```
+
+```csharp
+// object: é um tipo que pode armazenar qualquer valor ou referência
+object nome = "Ana";
+object idade = 25;
+object altura = 1.60;
+object ativo = true;
+object genero = 'F';
+```
+
+```csharp
+// dynamic: permite usar recursos avançados da linguagem, como a vinculação tardia, que resolve o tipo de uma variável em tempo de execução
+dynamic nome = "Teo";
+dynamic idade = 21;
+dynamic altura = 1.85;
+dynamic genero = 'M';
+dynamic ativo = false;
+```
