@@ -462,3 +462,49 @@ Console.WriteLine($"O valor ASCII do primeiro caractere é {ascii}");
 ```csharp
 Console.ReadKey();
 ```
+
+## Inferência de Tipos
+
+A partir da versão 3.0 da linguagem C# as variáveis que forem declaradas no escopo do método podem possuir *um tipo implícito* `var`.
+
+Usar a palavra-chave `var` para instruir o compilador para *deduzir o tipo da variável da expressão* a partir do valor que é atribuído na sua inicialização.
+
+O tipo inferido pode ser *um tipo interno, um tipo anônimo, um tipo definido pelo usuário ou um tipo definido na biblioteca de classes da plataforma .NET*.
+
+```csharp
+var x = 0; // x é int
+
+var y; // erro: implicity-typed
+```
+
+### Limitações
+
+- A palavra-chave `var` só pode ser usando quando uma variável local é declarada e inicializada na mesma instrução
+
+- Não é possível inicializar a variável como **null**
+
+- Múltiplas variáveis de tipo *implícito* não podem ser inicializadas na mesma instrução
+
+- Não é possível alterar o tipo da variável `var` depois de inicializada
+
+### Usos do Var
+
+- Considerado um açúcar sintático (*sugar syntax*)
+
+- Usada para declarar *tipos anônimos*
+
+- Usada em laços `for` e `foreach`
+
+- Usada em instruções `using`
+
+## Constantes
+
+Constantes são valores imutáveis que são conhecidos em *tempo de compilação* e não mudam durante a vida útil do programa.
+
+As constantes são declaradas usando o modificador `const` e devem ser inicializadas na sua declaração.
+
+```csharp
+const int a = 9; // uma declaração
+const int b = 2, c = 3; // múltiplas declarações
+const double d = (float)a / b * c; // armazena resultado de operações
+```
