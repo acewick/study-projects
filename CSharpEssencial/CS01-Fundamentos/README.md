@@ -573,3 +573,65 @@ Console.WriteLine($"Cosseno de {x} = {Math.Cos(x)}");
 Console.WriteLine($"Tangente de {x} = {Math.Tan(x)}");
 Console.WriteLine($"Exponencial de {x} = {Math.Exp(x)}");
 ```
+
+## Operador de Atribuição
+
+| Operador | Exemplo  | Significado                             |
+|:--------:|:--------:|:--------------------------------------- |
+| `=`      | `x = 5`  | x recebe o valor 5                      |
+| `+=`     | `x += 5` | x recebe o valor de x + 5 (`x = x + 5`) |
+| `-=`     | `x -= 5` | x recebe o valor de x - 5 (`x = x + 5`) |
+| `*=`     | `x *= 5` | x recebe o valor de x * 5 (`x = x + 5`) |
+| `/=`     | `x /= 5` | x recebe o valor de x / 5 (`x = x + 5`) |
+| `%=`     | `x %= 5` | x recebe o valor de x % 5 (`x = x + 5`) |
+
+```csharp
+// operadores de atribuição com tipos numéricos
+int x = 10;
+
+x += 5; // x = x + 5
+
+Console.WriteLine(x); // 15
+```
+
+```csharp
+// operadores de atribuição com strings
+
+string str = "123";
+str += "456";
+
+Console.WriteLine(str); // 123456
+```
+
+## Operadores de Incremento e Decremento
+
+Objetivo: Aumentar ou diminuir exatamente em uma unidade o valor de uma variável.
+
+| Operador | Exemplo          | Significado                               |
+| -------- | ---------------- | ----------------------------------------- |
+| ++       | `x++;` ou `++x;` | Incrementa x de uma unidade (`x = x + 1`) |
+| --       | `x--;` ou `--x;` | Decrementa x de uma unidade (`x = x - 1`) |
+
+```csharp
+x = 10;
+
+++x; // pré-incremento
+x++; // pós-incremento
+
+--x; // pré-decremento
+x--; // pós-decremento
+```
+
+### Diferença entre pré e pós incremento/decremento
+
+```csharp
+int a, resultado;
+
+a = 0;
+resultado = a++ + 10; // 10 -> primeiro calcula e depois incrementa
+Console.WriteLine(resultado);
+
+a = 0;
+resultado = ++a + 10; // 11 -> primeiro incrementa e depois calcula
+Console.WriteLine(resultado);
+```
