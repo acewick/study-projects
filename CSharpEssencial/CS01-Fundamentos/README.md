@@ -508,3 +508,68 @@ const int a = 9; // uma declaração
 const int b = 2, c = 3; // múltiplas declarações
 const double d = (float)a / b * c; // armazena resultado de operações
 ```
+
+## Operadores Aritméticos
+
+### Operadores binários
+
+| Operação                  | Operador | Exemplo |
+| ------------------------- | -------- | ------- |
+| adição                    | `+`      | x + y   |
+| subtração                 | `-`      | x - y   |
+| multiplicação             | `*`      | x * y   |
+| divisão                   | `/`      | x / y   |
+| módulo (resto da divisão) | `%`      | x % y   |
+
+```csharp
+Console.Write("Digite um número: ");
+int x = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Digite outro número: ");
+int y = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine();
+
+Console.WriteLine($"Soma de {x} + {y} = {x+y}");
+Console.WriteLine($"Subtração de {x} - {y} = {x-y}");
+Console.WriteLine($"Multiplicação de {x} * {y} = {x*y}");
+Console.WriteLine($"Divisão de {x} / {y} = {x/y}");
+Console.WriteLine($"Módulo de {x} % {y} = {x%y}");
+```
+
+### Classe Math
+
+Possui constantes e diversos **métodos estáticos** usados para cálculos matemáticos.
+
+| Métodos    | Resultado                                  | Exemplo                 |
+| ---------- | ------------------------------------------ | ----------------------- |
+| `Math.PI`  | Representa o número PI                     | PI = 3.141516171819     |
+| `Math.E`   | Representa a base `e` do logaritmo natural | E = 2.7182818284590     |
+| `Cos(x)`   | Obtém o cosseno de `x`                     | Cos(2.0) = -0.4164...   |
+| `Sin(x)`   | Obtém o seno de `x`                        | Sin(2) = 0.909297       |
+| `Tan(x)`   | Obtém o tangente de `x`                    | Tan(1.5) = 14.1014      |
+| `Sqrt(x)`  | Calcula a raiz quadrada de `x`             | Sqrt(169) = 13          |
+| `Pow(x,y)` | Obtém o valor de `x` elevado a `y`         | Pow(2,4) = 16           |
+| `Abs(x)`   | Fornece o valor absoluto `x`               | Abs(-4.5) = 4.5         |
+| `Max(x,y)` | Obtém o maior valor entre dois números     | Max(2.46,2.56) = 2.56   |
+| `Min(x.y)` | Obtém o menor valor entre dois números     | Min(1.92,1.89) = 1.89   |
+| `Log10(x)` | Calcula o logaritmo `x` na base 10         | Log10(3.0) = 0.47712... |
+| `Log(x)`   | Calcula o logaritmo `x` na base `e`        | Log(3) = 1.098612       |
+| `Exp(x)`   | Retorna o exponencial (`e` elevado a `x`)  | Exp(5.0) = 54.59...     |
+
+```csharp
+Console.Write("Digite um número: ");
+int x = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Digite outro número: ");
+int y = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine($"Raíz quadrada de {x} = {Math.Sqrt(x)}");
+Console.WriteLine($"Potência de {x} elevado a {y} = {Math.Pow(x,y)}");
+Console.WriteLine($"Valor máximo entre {x} e {y} = {Math.Max(x,y)}");
+Console.WriteLine($"Valor mínimo entre {x} e {y} = {Math.Min(x,y)}");
+Console.WriteLine($"Seno de {x} = {Math.Sin(x)}");
+Console.WriteLine($"Cosseno de {x} = {Math.Cos(x)}");
+Console.WriteLine($"Tangente de {x} = {Math.Tan(x)}");
+Console.WriteLine($"Exponencial de {x} = {Math.Exp(x)}");
+```
