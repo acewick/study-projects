@@ -673,3 +673,21 @@ Console.WriteLine(a == b); // False
 // método Equals()
 Console.WriteLine(a.Equals(b)); // False
 ```
+
+## Operadores Lógicos
+
+São usados em expressões lógicas e trabalham com operandos boolenaos e seu resultado será `true` ou `false` (*verdadeiro ou falso*).
+
+| Operação | Significado | Comportamento                                                                               |
+| -------- | ----------- | ------------------------------------------------------------------------------------------- |
+| `&&`     | AND         | Retornará `false` se apenas uma das condições for **False**                                 |
+| `x`      | OR          | Retornará `true` se apenas uma das condições for **True**                                   |
+| `!`      | NOT         | Inverte o resultado, retorna `false` se o resultado da expressão for **True**, e vice-versa |
+
+```csharp
+bool a = true, b = false;
+
+Console.WriteLine($"Operador AND (&&): {a && b}"); // False
+Console.WriteLine($"Operador OR (||): {a || b}"); // True
+Console.WriteLine($"Operador NOT (!): {!b}"); // True
+```

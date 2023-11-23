@@ -27,7 +27,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Operadores-Aritmeticos", "O
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Operadores-Atribuicao", "Operadores-Atribuicao\Operadores-Atribuicao.csproj", "{2750A429-3F3C-4E8E-B74A-B1ADBA3E89BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Operadores-Relacionais", "Operadores-Relacionais\Operadores-Relacionais.csproj", "{24704933-DA1E-47C2-A8FB-D9A0B1AC3A7B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Operadores-Relacionais", "Operadores-Relacionais\Operadores-Relacionais.csproj", "{24704933-DA1E-47C2-A8FB-D9A0B1AC3A7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Operadores-Logicos", "Operadores-Logicos\Operadores-Logicos.csproj", "{5D1DDE60-2ED7-4FD1-A86E-9D62B989D8CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{24704933-DA1E-47C2-A8FB-D9A0B1AC3A7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{24704933-DA1E-47C2-A8FB-D9A0B1AC3A7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{24704933-DA1E-47C2-A8FB-D9A0B1AC3A7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D1DDE60-2ED7-4FD1-A86E-9D62B989D8CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D1DDE60-2ED7-4FD1-A86E-9D62B989D8CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D1DDE60-2ED7-4FD1-A86E-9D62B989D8CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D1DDE60-2ED7-4FD1-A86E-9D62B989D8CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
