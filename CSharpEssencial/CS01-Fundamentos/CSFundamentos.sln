@@ -25,7 +25,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tipos-Var-Const", "Tipos-Va
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Operadores-Aritmeticos", "Operadores-Aritmeticos\Operadores-Aritmeticos.csproj", "{7457C2E4-4B7A-42F4-8CCF-BF446153781E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Operadores-Atribuicao", "Operadores-Atribuicao\Operadores-Atribuicao.csproj", "{2750A429-3F3C-4E8E-B74A-B1ADBA3E89BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Operadores-Atribuicao", "Operadores-Atribuicao\Operadores-Atribuicao.csproj", "{2750A429-3F3C-4E8E-B74A-B1ADBA3E89BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Operadores-Relacionais", "Operadores-Relacionais\Operadores-Relacionais.csproj", "{24704933-DA1E-47C2-A8FB-D9A0B1AC3A7B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,10 @@ Global
 		{2750A429-3F3C-4E8E-B74A-B1ADBA3E89BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2750A429-3F3C-4E8E-B74A-B1ADBA3E89BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2750A429-3F3C-4E8E-B74A-B1ADBA3E89BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24704933-DA1E-47C2-A8FB-D9A0B1AC3A7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24704933-DA1E-47C2-A8FB-D9A0B1AC3A7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24704933-DA1E-47C2-A8FB-D9A0B1AC3A7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24704933-DA1E-47C2-A8FB-D9A0B1AC3A7B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

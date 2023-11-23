@@ -635,3 +635,41 @@ a = 0;
 resultado = ++a + 10; // 11 -> primeiro incrementa e depois calcula
 Console.WriteLine(resultado);
 ```
+
+## Operadores Relacionais
+
+A característica dos operadores relacionais é que o resultado de uma operação relacional terá como resultado `true` ou `false` (*verdadeiro ou falso*).
+
+| Operador | Significado    | Exemplo (`int x = 10; y = 20;`)     |
+| -------- | -------------- | ----------------------------------- |
+| `==`     | Igualdade      | `x == y` (resultado será **False**) |
+| `>`      | Maior que      | `x > y` (resultado será **False**)  |
+| `<`      | Menor que      | `x < y` (resultado será **True**)   |
+| `>=`     | Maior ou igual | `x >= y` (resultado será **False**) |
+| `<=`     | Menor ou igual | `x <= y` (resultado será **True**)  |
+| `!=`     | Diferente de   | `x != y` (resultado será **True**)  |
+
+### Comparando números
+
+```csharp
+int x = 10;
+int y = 20;
+
+Console.WriteLine($"{x} == {y}: {x == y}");
+Console.WriteLine($"{x} > {y}: {x > y}");
+Console.WriteLine($"{x} < {y}: {x < y}");
+Console.WriteLine($"{x} >= {y}: {x >= y}");
+Console.WriteLine($"{x} <= {y}: {x <= y}");
+Console.WriteLine($"{x} != {y}: {x != y}");
+```
+
+### Comparando strings
+
+```csharp
+string a = "Curso";
+string b = "curso";
+Console.WriteLine(a == b); // False
+
+// método Equals()
+Console.WriteLine(a.Equals(b)); // False
+```
