@@ -691,3 +691,44 @@ Console.WriteLine($"Operador AND (&&): {a && b}"); // False
 Console.WriteLine($"Operador OR (||): {a || b}"); // True
 Console.WriteLine($"Operador NOT (!): {!b}"); // True
 ```
+
+## Operadores Unitários, Binários e Ternário
+
+### Operador Unitário
+
+Exemplo: `-5` o sinal que define o valor como número negativo.
+
+```csharp
+int a = +5; // sinal opcional para números positivos
+float b = -2.7f; // sinal obrigatório para números negativos
+
+int x = 1;
+int y = -x;
+```
+
+### Operador Binário
+
+Exemplo: `5 * 2` o sinal representa uma operação entre dois números.
+
+```csharp
+int a = 2 * 5;
+bool b = true && true;
+```
+
+### Operador Ternário (condicional)
+
+Exemplo: `true ? 1 : 0` a combinação de sinais retornam um número caso o resultado da expressão seja verdadeiro ou falso.
+
+```csharp
+bool a = true, b = false;
+string resultado = a == b ? "é igual" : "é diferente";
+```
+
+#### Operador Ternário Aninhado
+
+```csharp
+int x = 10, y = 20;
+string msg = x > y ? "x é maior que y" :
+                    x < y ? "x é menor que y" :
+                    x == y ? "x é igual a y" : "sem resultado";
+```
