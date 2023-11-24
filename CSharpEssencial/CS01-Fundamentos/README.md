@@ -761,3 +761,13 @@ bool b = !(9 != 8) && (5 >= 7 || 8 >= 6); // false
 int a = 5, b = 6, c = 3;
 int resultado = a = b = c; // 3 - atribuição da direita para esquerda
 ```
+
+## Nullable Reference Types
+
+Para evitar o `NullRefereneceException`, podemos usar o tipo Nullable `?` ao atribuir o valor `null`, e empregar o **Null Conditional Operator** `?.` ao acessar a referência.
+
+```csharp
+string? nome = null;
+Console.WriteLine(nome?.ToUpper()); // usar métodos com valores nulos pode lançar exceção
+// sem o operador condicional nulo, o compilador lançaria uma exceção em tempo de execução
+```

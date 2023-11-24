@@ -14,4 +14,9 @@ if (a.HasValue)
 else
     Console.WriteLine("a não possui um valor (null)");
 
+// Null Conditional Operator
+string? nome = null;
+Console.WriteLine(nome?.ToUpper()); // usar métodos em objetos nulos pode lançar exceção
+// sem o operador condicional nulo, o compilador lançaria uma exceção em tempo de execução
+
 Console.ReadKey();
