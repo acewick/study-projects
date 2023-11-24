@@ -732,3 +732,32 @@ string msg = x > y ? "x é maior que y" :
                     x < y ? "x é menor que y" :
                     x == y ? "x é igual a y" : "sem resultado";
 ```
+
+## Precedência de Operadores
+
+As expressões como operadores de maior precedência são avaliadas primeiro. Quando dois operadores tiverem a *mesma precedência* eles são avaliados com base na **associatividade** do operador que pode ser *da direita para esquerda* ou *da esquerda para a direita*.
+
+| Operadores  | Ordem de Precedência               | Associatividade            |
+| ----------- | ---------------------------------- | -------------------------- |
+| Aritméticos | `*`, `/`, `%`, `+`, `-`            | Da esquerda para a direita |
+| Atribuição  | `=`, `*=`, `/=`, `%=`, `+=`, `-=`  | Da direita para a esquerda |
+| Incremento  | `++`, `--`, (prefixo) `++a`, `--a` | Da direita para a esquerda |
+| Decremento  | `++`, `--`, (sufixo) `a++`, `a--`  | Da esquerda para a direita |
+| Relacionais | `<`, `>`, `<=`, `>=`, `==`, `!=`   | Da esquerda para a direita |
+| Lógicos     | `!`, `&&`, `\|\|`                  | Da esquerda para a direita |
+
+Os operadores `[]` e `()` possuem a maior ordem de precedência nesta ordem, e podem ser usados para alterar a ordem de precedência.
+
+```csharp
+int x = 10 - 2 * 3; // 4
+int y = (10 - 2) * 3 // 24
+bool a = !(9 != 8) && 5 >= 7 || 8 >= 6; // true
+bool b = !(9 != 8) && (5 >= 7 || 8 >= 6); // false
+```
+
+### Precedência de associatividade
+
+```csharp
+int a = 5, b = 6, c = 3;
+int resultado = a = b = c; // 3 - atribuição da direita para esquerda
+```
