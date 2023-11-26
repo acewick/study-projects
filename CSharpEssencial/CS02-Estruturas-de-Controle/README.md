@@ -129,3 +129,59 @@ switch(expressao1)
         // código
 }
 ```
+
+## Estruturas de Repetição (*loops*)
+
+As estruturas de repetição são usadas para repetir instruções ou blocos de código.
+
+A decisão de repetir o código é baseada na avaliação de uma expressão lógica. Se a expressão for verdadeira, o código é executado.
+
+Uma estrutura de repetição permite especificar que uma ação seja repetida várias vezes, dependendo do valor de uma condição.
+
+### Loop: Goto e Label
+
+A instrução `goto` pode ser usada para *transferir o controle de uma parte para outra parte* do programa com ajuda de um identificador chamado de **"label"**.
+
+```csharp
+int i = 1;
+
+repetir: // pode ser qualquer label, exceto palavras chaves
+    Console.WriteLine(i);
+    i++;
+if (i <= 10)
+    goto repetir;
+```
+
+### Loop: While
+
+A instrução `while` executa uma instrução ou um bloco de instrução enquanto uma expressão booleana especificada for avaliada como `true`.
+
+Como essa expressão é avaliada antes de cada execução do loop, um loop `while` pode *executar zero ou mais vezes*.
+
+```csharp
+var i = 1;
+
+while(i <= 10)
+{
+    Console.WriteLine(i);
+    i++;
+}
+```
+
+#### While: Instrução break
+
+A instrução `break` pode ser usada para encerrar uma instrução `switch` ou um loop (`while`, `for`, `if`, etc.) em uma determinada condição.
+
+```csharp
+while(true)
+{
+    Console.Write("Digite um número (999 para sair): ");
+    int num = Convert.ToInt32(Console.ReadLine());
+    if (num == 999)
+        break;
+    if (num % 2 == 0)
+        Console.WriteLine($"O número {num} é par");
+    else
+        Console.WriteLine($"O número {num} é impar");
+}
+```
