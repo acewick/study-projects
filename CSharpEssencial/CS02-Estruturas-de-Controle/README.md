@@ -185,3 +185,20 @@ while(true)
         Console.WriteLine($"O número {num} é impar");
 }
 ```
+
+### Loop: do-while
+
+O loop `do-while` é uma variante do loop `while` e possui o mesmo comportamento.
+
+A diferença é que o loop `do-while` *executa o bloco de código pelo menos uma vez*, antes de avaliar a condição, e a seguir repete o loop enquanto a condição for `true`.
+
+```csharp
+int i = 1;
+do {
+    Console.WriteLine(i);
+    i++;
+}
+while (i <= 10);
+```
+
+A execução será interrompida quando a condição booleana for avaliada como `false`.
