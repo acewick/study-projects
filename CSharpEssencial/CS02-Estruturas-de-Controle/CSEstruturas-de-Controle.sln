@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Loop-While", "Loop-While\Lo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Loop-Do-While", "Loop-Do-While\Loop-Do-While.csproj", "{6082A500-4E40-4A68-A5D4-D7C3E74C14FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loop-For", "Loop-For\Loop-For.csproj", "{09737FD2-37B3-4D54-8046-E048DA9A61B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Loop-For", "Loop-For\Loop-For.csproj", "{09737FD2-37B3-4D54-8046-E048DA9A61B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Instrucao-Break-Continue", "Instrucao-Break-Continue\Instrucao-Break-Continue.csproj", "{58C5967D-01D5-47DF-AD8E-443A9952B72F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{09737FD2-37B3-4D54-8046-E048DA9A61B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09737FD2-37B3-4D54-8046-E048DA9A61B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09737FD2-37B3-4D54-8046-E048DA9A61B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58C5967D-01D5-47DF-AD8E-443A9952B72F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58C5967D-01D5-47DF-AD8E-443A9952B72F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58C5967D-01D5-47DF-AD8E-443A9952B72F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58C5967D-01D5-47DF-AD8E-443A9952B72F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
